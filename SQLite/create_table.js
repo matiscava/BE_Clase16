@@ -1,5 +1,7 @@
 const { options } = require('./options/sqlite');
+
 const knex = require('knex')(options);
+
 
 knex.schema.createTable('cars', (table) => {
     table.increments('id');
